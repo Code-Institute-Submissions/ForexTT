@@ -384,30 +384,7 @@ transition: .5s;
 /* MEDIA QUERIES */
 /* ------------- */
 
-@media only screen and (min-width: 700px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
 
-  .wrapper > * {
-    padding: 2em;
-  }
-
-  .company-info {
-    border-radius: 4px 0 0 4px;
-  }
-
-  .contact {
-    border-radius: 0 4px 4px 0;
-  }
-
-  .company-info h3,
-  .company-info ul,
-  .brand {
-    text-align: left;
-  }
-}
 
 /* End Of Contact Section---------------------------------- */
 
@@ -577,4 +554,276 @@ footer{
     
 }
 
-/* ---------------------------------- */
+/* End Of Footer---------------------------------- */
+
+/* Home Page Media Querys---------------------------------- */
+
+@media only screen and (max-width: 768px){
+    
+   /* General--------------- */
+
+    html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .dot {
+        height: 6px;
+        width: 6px;
+        margin-right: 8px;
+        background-color: #1c75bc;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    /* Header--------------- */
+
+    .brand{
+        margin-left:25%;
+        padding-top: 10px;
+    }
+    
+    .navbar{
+        height: 40px
+    }
+
+
+    .navbarli{
+        display: none
+    }
+
+    /* Promo--------------- */
+
+    .promobanner{
+        display: block;
+        width: 80%;
+        height: 150px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top:5px; 
+        align-content: center;
+
+    }
+
+    .promobannertext{
+        padding: 0;
+        margin: 0;
+    }
+
+    .promobannerh3{
+        font-size: 14px
+    }
+
+    .promobannerh32{
+        font-size: 14px
+    }
+
+    .promobannertext p{
+        font-size: 12px
+    }
+
+    .promobanner a{
+        margin: 0;
+        margin-right: 10px;
+        padding: 0;
+        display: inline-block
+    }
+
+    .promotextbutton2 a{
+        width: 40%;
+        height: 18px;
+        font-size: 10px;
+        padding-top: 5px;
+
+    }
+
+    .promotextbutton1 a{
+        margin-right: 50px;
+        width: 30%;
+        height: 18px;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+    .promobannerimage{
+        display: none;
+    }
+
+    /* Services--------------- */
+
+    .homeservices{
+        display: block;
+        margin: 0;
+        height: 590px;
+    }
+
+    .accountmanageimage{
+        padding-top: 20px
+    }
+
+    .accountmanageimage,
+    .forexsignalsimage{
+        margin: 0;
+        height: 120px;
+        width: 40%;
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+
+    
+    .accountmanagement h3,
+    .forexsignals h3{
+        font-size: 12px;
+        margin: 0;
+        margin-bottom: 12px;
+        text-align: center
+    }
+
+    .accountmanagement,
+    .forexsignals{
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .homeservices p{
+        font-size: 12px;
+        padding-left: 25px;
+        margin: 10px;
+    }
+
+    /* Contact Form--------------- */
+
+    .callback-info h3{
+        font-size: 14px
+    }
+
+    .callback-info p{
+        display: none;
+    }
+
+    .contactform{
+        height: 200px;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%
+    }
+
+    /* Analysis--------------- */
+
+    .analysissection{
+        display: block;
+        margin: 0;
+        height: 440px;
+    }
+
+    .analysisimage1,
+    .analysisimage2{
+        margin: 0;
+        margin-top: 25px;
+        height: 120px;
+        width: 40%;
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+
+    /*.analysisimage2{
+        margin-top: 10px
+    }*/
+
+    .technicalan h3,
+    .fundamentalan h3{
+        font-size: 12px;
+        margin: 0;
+        margin-bottom: 12px;
+        text-align: center
+    }
+
+    .technicalan p,
+    .fundamentalan p{
+        font-size: 10px;
+        margin: 0;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .technicalan p br,
+    .fundamentalan p br{
+        display: none;
+    }
+
+
+    .fundamentalan {
+    margin: 0;
+    }
+
+
+
+    /* Socials--------------- */
+
+    .freesignals{
+        display: block;
+        height: 240px;
+        width: 88%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .image3{
+        display: none
+    }
+
+    .freesignalstext h3{
+        font-size: 14px;
+        padding-top: 40px;
+    }
+
+    .freesignalstext p {
+        font-size: 11px
+    }
+
+    .freesignalssocials{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .signalsocialicons,
+    .signalsocialiconsinstagram{
+        height: 69px;
+        width: 69px;
+        margin: 5px;
+    }
+
+    /* Footer--------------- */
+
+    .footer{
+        display: inline;
+    }
+
+    footer p{
+        font-size: 10px
+    }
+
+    .footeraddress{
+        display: none;
+    }
+
+    
+
+
+
+
+
+
+  }
+}
+
+/* End---------------------------------- */
