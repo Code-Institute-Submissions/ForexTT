@@ -1,0 +1,580 @@
+/* General CSS ---------------------------------- */
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+  background-color: #1c75bc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.container{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ---------------------------------- */
+
+/* Top Banner ---------------------------------- */
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-column-gap: 0;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(grey, lightgrey);
+    align-content: center;
+}
+
+.banneremail{
+    padding-top: 5px;
+}
+
+.bannerquestion{
+    float: right;
+    padding-top: 5px;
+}
+
+.bannerbutton{
+    float: left;
+    margin-left: 20px;
+    height: 30px;
+    text-transform: uppercase;
+    background-color:#1c75bc;
+    color: white;
+}
+
+.bannerbutton:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+/* ---------------------------------- */
+
+/* Navbar---------------------------------- */
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+    padding-top: 2.5%;
+    background-color: #F7F7F7;
+    /*border-bottom: 1.5px solid lightgrey;*/
+    margin-bottom: -4px;
+}
+
+nav{
+    margin-right: 12.5%;
+}
+
+.border{
+    height: 1px;
+    width: 100%;
+    background-color:lightgrey;
+}
+
+.brand{
+    display: inline-block;
+    float: left;
+    margin-top: 0;
+    margin-left: 12.5%;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transform: translateX(-100rem);
+    animation: slidein .5s forwards;
+}
+
+.brand span{
+    color: #1c75bc;
+}
+
+.navbarli ul{
+    list-style:none;
+    text-align: center;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.navbarli li{
+    font-size: 1.2em;
+    height: 40px;
+    display: inline-block;
+    margin-right: 4.5%;
+    float: right;
+    transform: translateX(100rem);
+    animation: slidein .5s forwards;
+}
+
+.navbarli a{
+    text-decoration: none;
+    color: grey;
+    display: block;
+}
+
+.navbarli a::after{
+content:'';
+display: block;
+width: 0;
+height: 2px;
+background: #1c75bc;
+transition: width .3s
+}
+
+.navbarli a:hover::after{
+width: 100%;
+transition: .5s;
+}
+
+@keyframes slidein {
+    from{
+
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+
+.navbarli li:nth-child(5){
+    animation-delay: 0s;
+}
+
+.navbarli li:nth-child(4){
+    animation-delay: .4s;
+}
+
+.navbarli li:nth-child(3){
+    animation-delay: .8s;
+}
+
+.navbarli li:nth-child(2){
+    animation-delay: 1.2s;
+}
+
+.navbarli li:nth-child(1){
+    animation-delay: 1.6s;
+}
+
+/* ---------------------------------- */
+
+/* Promo Section---------------------------------- */
+
+.promobanner{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    align-content: center;
+    background-color: #F7F7F7;
+}
+
+.promobannerimage {
+  width: 60%;
+  height: 580px;
+  -ms-transform: skewY(6deg); /* IE 9 */
+  transform: skewY(6deg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  float: left;
+  
+}
+
+.promobannertext{
+    margin: 10%;
+    margin-left: 45%;
+    text-align: left;
+}
+
+.promobannerh3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.promobannerh32{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.promotextbutton1 a{
+    float: right;
+    margin-right: 40px;
+    margin-top: 15px;
+    height: 20px;
+    width: 110px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 1px solid grey;
+    color: grey;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.promotextbutton1 a:hover{
+    background-color: #1c75bc;
+    color: white;
+    border-color: #1c75bc;
+    transition: 0.5s;
+
+}
+
+.promotextbutton2 a{
+    float: right;
+    margin-right: 40px;
+    margin-top: 15px;
+    height: 20px;
+    width: 200px;
+    text-transform: uppercase;
+    background-color:#1c75bc;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.promotextbutton2 a:hover{
+    background-color: #627EDC;
+    color: white;
+    transition: 0.5s;
+}
+
+.bannerbutton{
+    float: left;
+    margin-left: 20px;
+    height: 30px;
+    text-transform: uppercase;
+    background-color:#1c75bc;
+    color: white;
+}
+
+/* ---------------------------------- */
+
+
+/* Services Section---------------------------------- */
+
+.homeservices{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0;
+    width: 100%;
+    height: 400px;
+    align-content: center;
+    background-color: white;
+}
+
+.accountmanagement{
+   /* margin-left: 15%*/
+   margin-left: 30px
+}
+
+.forexsignals{
+    
+}
+
+
+.accountmanageimage{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    margin-left: 40%;
+    
+}
+
+.forexsignalsimage{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+
+
+/* ---------------------------------- */
+
+/* Contact Form Section---------------------------------- */
+
+.contactform {
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: #F7F7F7;
+}
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea{
+  width: 80%;
+  padding: 1em;
+  border: solid 1px #627EDC;
+  border-radius: 4px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: #627EDC;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #3952a3;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 260px 7px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 260px 7px;
+	background-repeat: no-repeat;
+}
+
+#phone{
+	background-image: url(https://www.peabody.org.uk/images/rebrand2018_svg/phone.icon.svg);
+	background-size: 30px 30px;
+	background-position: 260px 7px;
+	background-repeat: no-repeat;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
+/* End Of Contact Section---------------------------------- */
+
+/* Analysis Section---------------------------------- */
+
+.analysissection{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0;
+    width: 100%;
+    height: 400px;
+    align-content: center;
+    background-color: white;
+}
+
+.analysisimage1{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    margin-left: 20%;
+}
+
+.analysisimage2{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.technicalan{
+    margin-left: 10px
+}
+
+.fundamentalan{
+    margin-right: 15%;
+}
+/* End Of Analysis Section---------------------------------- */
+
+/* Social Media Section---------------------------------- */
+
+.freesignals{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0;
+    /*text-align: center;*/
+    width: 100%;
+    height: 650px;
+    padding-bottom: 100px;
+    background-color: #F7F7F7;
+    align-content: center;
+}
+
+.freesignalstext p{
+    
+    
+}
+
+.forexsignalsimages{
+    align-content: center;
+
+
+}
+
+.image3{
+    height: 400px;
+    width: 250px;
+    margin-left: 30%;
+    border: 5px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+/*.technicalan{
+    margin-left: 10px
+}
+
+.fundamentalan{
+        margin-right: 15%;
+}
+*/
+
+
+/*.homeservicesimages{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    margin-left: 20%;
+}
+
+.homeservicesimages2{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}*/
+
+.freesignalstext{
+   
+}
+
+/*.textwrapper{
+    margin-left: 20%;
+}*/
+
+.freesignalssocials{
+    /*display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 0;*/
+}
+
+.signalsocialicons,
+.signalsocialiconsinstagram{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+.signalsocialicons:hover{
+    border-radius: 70%;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.signalsocialiconsinstagram:hover{
+    border-radius: 35%;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/* End Of Socials Section---------------------------------- */
+
+
+/* Footer---------------------------------- */
+
+footer{
+        background-color: #F7F7F7;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-column-gap: 0;
+    text-align: center;
+    width: 100%;
+    height: 130px;
+
+    align-content: center;
+}
+
+.lowerfooter{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    align-content: center;
+}
+
+.dividingline{
+    height: 1px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: grey;
+}
+
+.copyright{
+    
+}
+
+/* ---------------------------------- */
