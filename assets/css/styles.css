@@ -453,7 +453,7 @@ transition: .5s;
     grid-column-gap: 0;
     /*text-align: center;*/
     width: 100%;
-    height: 650px;
+    height: 600px;
     padding-bottom: 100px;
     background-color: #F7F7F7;
     align-content: center;
@@ -465,11 +465,6 @@ transition: .5s;
 
 .freesignals span{
     font-family: poppins
-}
-
-.freesignalstext p{
-    
-    
 }
 
 .forexsignalsimages{
@@ -487,59 +482,29 @@ transition: .5s;
     box-shadow: 10px 10px 5px grey;
 }
 
-/*.technicalan{
-    margin-left: 10px
-}
-
-.fundamentalan{
-        margin-right: 15%;
-}
-*/
-
-
-/*.homeservicesimages{
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    margin-left: 20%;
-}
-
-.homeservicesimages2{
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-}*/
-
-.freesignalstext{
-   
-}
-
-/*.textwrapper{
-    margin-left: 20%;
-}*/
-
-.freesignalssocials{
-    /*display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-column-gap: 0;*/
-}
-
-.signalsocialicons,
-.signalsocialiconsinstagram{
-    height: 100px;
+.signalsocialicons{
     width: 100px;
-    margin: 5px;
+    height: 100px;
+    padding: 10px;
 }
 
 .signalsocialicons:hover{
-    border-radius: 70%;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 60%;
+}
+
+.signalsocialiconsinstagram{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
 }
 
 .signalsocialiconsinstagram:hover{
-    border-radius: 35%;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 40%;
 }
+
+
 
 /* End Of Socials Section---------------------------------- */
 
@@ -577,7 +542,7 @@ footer a{
     text-align: center;
     width: 100%;
     height: 30px;
-    padding: 20px;
+    padding: 40px;
     align-content: center;
 }
 
@@ -593,13 +558,35 @@ footer a{
     
 }
 
+.designedby{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0;
+    
+}
+
+.designedbytext{
+    padding-left: 275px
+
+}
+
+.designedbyimage{
+    padding-right: 300px
+}
+
+.responsivecopyright{
+    display: none;
+}
+
 /* End Of Footer---------------------------------- */
 
 
 
 /* Home Page Media Querys---------------------------------- */
 
-@media only screen and (max-width: 768px){
+@media only screen
+and (min-width: 321px)
+and (max-width: 480px){
     
    /* General--------------- */
 
@@ -621,7 +608,6 @@ footer a{
         display: inline-block;
     }
 
-
     /* Header--------------- */
 
     .brand{
@@ -632,7 +618,6 @@ footer a{
     .navbar{
         height: 40px
     }
-
 
     .navbarli{
         display: none
@@ -648,7 +633,6 @@ footer a{
         padding-right: 10%;
         padding-top:5px; 
         align-content: center;
-
     }
 
     .promobannertext{
@@ -680,7 +664,6 @@ footer a{
         height: 18px;
         font-size: 10px;
         padding-top: 5px;
-
     }
 
     .promotextbutton1 a{
@@ -716,7 +699,6 @@ footer a{
         padding-left: 30%;
     }
 
-    
     .accountmanagement h3,
     .forexsignals h3{
         font-size: 12px;
@@ -752,8 +734,8 @@ footer a{
 
     .contactform{
         height: 165px;
-        width: 90%;
-        padding-left: 5%;
+        width: 87.5%;
+        padding-left: 7.5%;
         padding-right: 5%;
         padding-top: 6%;
         padding-bottom: 6%;
@@ -781,10 +763,6 @@ footer a{
         padding-left: 30%;
     }
 
-    /*.analysisimage2{
-        margin-top: 10px
-    }*/
-
     .technicalan h3,
     .fundamentalan h3{
         font-size: 12px;
@@ -808,21 +786,18 @@ footer a{
         display: none;
     }
 
-
     .fundamentalan {
     margin: 0;
     }
-
-
 
     /* Socials--------------- */
 
     .freesignals{
         display: block;
         height: 240px;
-        width: 88%;
-        padding-left: 6%;
-        padding-right: 6%;
+        width: 87.5%;
+        padding-left: 7.5%;
+        padding-right: 5%;
     }
 
     .image3{
@@ -845,9 +820,9 @@ footer a{
 
     .signalsocialicons,
     .signalsocialiconsinstagram{
-        height: 69px;
-        width: 69px;
-        margin: 5px;
+        height: 65px;
+        width: 65px;
+        margin: -4px
     }
 
     /* Footer--------------- */
@@ -864,7 +839,377 @@ footer a{
         display: none;
     }
 
-  }
+    .footerlegal{
+        margin-top: -15px
+    }
+
+    .lowerfooter{
+        display: block;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+
+    .copyright{
+        display: none
+    }
+
+    .designedby{
+        display: inline-block
+    }
+
+    .designedbytext{
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .designedbyimage{
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    .responsivecopyright{
+        display: block;
+        padding: 5px;
+        padding-left: 40px;
+        text-align: center
+        
+    }
 }
+
+/* Tablet Media Querys---------------------------------- */
+
+@media only screen
+and (min-width: 766px)
+and (max-width: 1024px){
+
+    /* General--------------- */
+
+    html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .dot {
+        height: 6px;
+        width: 6px;
+        margin-right: 8px;
+        background-color: #1c75bc;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    /* Header--------------- */
+
+    .brand{
+        width: 30%;
+        padding-left:35%;
+        padding-right: 35%;
+        padding-top: 10px;
+        margin:0;
+    }
+    
+    .navbar{
+        height: 40px
+    }
+
+    .navbarli{
+        display: none
+    }
+
+    /* Promo--------------- */
+
+    .promobanner{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 0;
+        text-align: center;
+        width: 100%;
+        height: 700px;
+        align-content: center;
+        background-color: #F7F7F7;
+    }
+
+    .promobannerimage {
+       width: 100%;
+       height: 580px;
+       -ms-transform: skewY(6deg); /* IE 9 */
+       transform: skewY(6deg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       float: left;
+    }
+
+    .promobannertext{
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 20%;
+        margin: 0;
+    }
+
+    .promobannerh3{
+        font-size: 16px
+    }
+
+    .promobannerh32{
+        font-size: 16px
+    }
+
+    .promobannertext p{
+        font-size: 14px
+    }
+
+    .promobanner a{
+        margin: 0;
+        margin-right: 10px;
+        padding: 0;
+        display: inline-block
+    }
+
+    .promotextbutton2 a{
+        width: 45%;
+        height: 26px;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    .promotextbutton1 a{
+        margin-right: 50px;
+        width: 35%;
+        height: 26px;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    .promobannerimage{
+        display: inline-block;
+    }
+
+    /* Services--------------- */
+
+    .homeservices{
+        display: block;
+        margin: 0;
+        height: 420px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 0;
+    }
+
+    .accountmanageimage,
+    .forexsignalsimage{
+        margin: 0;
+        height: 160px;
+        width: 60%;
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .accountmanagement h3,
+    .forexsignals h3{
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 12px;
+        text-align: center
+    }
+
+    .accountmanagement,
+    .forexsignals{
+        margin: 0;
+        padding: 0;
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .homeservices p{
+        font-size: 14px;
+        padding-left: 25px;
+        margin: 10px;
+    }
+
+    /* Contact Form--------------- */
+
+    .callback-info h3{
+        font-size: 14px
+    }
+
+    .callback-info p{
+        display: none;
+    }
+
+    .contactform{
+        height: 160px;
+        width: 87.5%;
+        padding-left: 7.5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    /* Analysis--------------- */
+
+    .analysissection{
+        display: block;
+        margin: 0;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 0;
+    }
+
+    .analysissection p{
+        font-size: 14px
+    }
+
+    .analysisimage1,
+    .analysisimage2{
+        margin: 0;
+        margin-top: 5px;
+        height: 120px;
+        width: 40%;
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+
+    .technicalan h3,
+    .fundamentalan h3{
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 12px;
+        text-align: center
+    }
+
+    .technicalan p,
+    .fundamentalan p{
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .technicalan p br,
+    .fundamentalan p br{
+        display: none;
+    }
+
+    .fundamentalan {
+    margin: 0;
+    }
+
+    /* Socials--------------- */
+
+    .freesignals{
+        display: block;
+        height: 480px;
+        width: 98%;
+        padding:1%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 0;
+    }
+
+    .freesignalstext{
+        margin-left: -20px
+    }
+
+    .forexsignalsimages{
+        padding-left: 40px
+    }
+
+    .image3{
+        display: inline-block;
+        padding: 0;
+        margin:0;
+    }
+
+    .freesignalstext h3{
+        font-size: 16px;
+        padding-top: 40px;
+    }
+
+    .freesignalstext p {
+        font-size: 13px
+    }
+
+    .freesignalssocials{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .signalsocialicons,
+    .signalsocialiconsinstagram{
+        height: 65px;
+        width: 65px;
+        margin: -4px
+    }
+
+    /* Footer--------------- */
+
+    .footer{
+        display: inline;
+    }
+
+    footer p{
+        font-size: 13px
+    }
+
+    .footeraddress{
+        display: none;
+    }
+
+    .footerlegal{
+        margin-top: -15px
+    }
+
+    .lowerfooter{
+        display: block;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+
+    .copyright{
+        display: none
+    }
+
+    .designedby{
+        display: inline-block
+    }
+
+    .designedbytext{
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .designedbyimage{
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    .responsivecopyright{
+        display: block;
+        padding: 5px;
+        padding-left: 40px;
+        text-align: center
+        
+    }
+
+}
+
 
 /* End---------------------------------- */
