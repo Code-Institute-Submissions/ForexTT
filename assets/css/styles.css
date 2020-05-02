@@ -4,14 +4,18 @@
 body{
     margin:0;
     padding:0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'oswald', sans-serif;
     overflow-x: hidden;
     font-size: 16px
 }
 
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 
+    color: #616161;
+}
+
+h2{
+    color: #444444
 }
 
 .dot{
@@ -178,6 +182,7 @@ nav{
 .herotext h2{
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 1.5em;
     letter-spacing: 1px;
 }
 
@@ -236,19 +241,33 @@ nav{
     background-color: white;
 }
 
-.homeservices h3{
+.homeservices h2{
     font-family: poppins, sans-serif;
+    color: #444444;
+    font-size: 1.75em;
+    text-decoration: underline
 }
 
 
 
 .accountmanagement{
-   /* margin-left: 15%*/
-   margin-left: 30px
+   /* margin-left: 30px;*/
+   
+   
+   width: 100%;
+       
+
 }
 
 .forexsignals{
     
+    width: 100%;
+    
+    
+}
+
+.container{
+    display: flex;
 }
 
 
@@ -256,7 +275,8 @@ nav{
     height: 200px;
     width: 200px;
     margin: 10px;
-    margin-left: 40%;
+    margin-left: 35%;
+    margin-right: 30px;
     
 }
 
@@ -265,15 +285,100 @@ nav{
     width: 200px;
     margin: 10px;
 }
+/* ---------------------------------- */
 
+/* Why Invest Section---------------------------------- */
+.whyinvest{
+    width: 65%;
+    height: 1350px;
+    background-color: #F7F7F7;
+    margin: 0;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
 
+.whyinvest h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.75em;
+    text-decoration: underline;
+    color: #444444;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    text-transform: uppercase
+}
+
+.whyinvest p{
+    color: #616161
+}
+
+.whyinvest span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #616161;
+    font-weight: 700; 
+}
 
 /* ---------------------------------- */
 
+/* Analysis Section---------------------------------- */
+
+.analysissection{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0;
+    width: 100%;
+    height: 400px;
+    align-content: center;
+    background-color: white;
+}
+
+.analysissection h2{
+    font-family: poppins;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    text-decoration: underline
+}
+
+.analysisimage1{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    margin-left: 20%;
+}
+
+.analysisimage2{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.technicalan{
+    width: 65%;
+    padding-left: 35%
+}
+
+.tech_img{
+    height: 28px;
+    width: 28px;
+    padding-left: 7px;
+}
+
+
+.fundamentalan{
+    width: 65%;
+    padding-right: 35%;
+}
+
+.fund_img{
+    height: 28px;
+    width: 28px;
+    padding-left: 10px;
+}
+/* End Of Analysis Section---------------------------------- */
+
+
 /* Contact Form Section---------------------------------- */
-
-/* Contact Form ---------------------------------- */
-
 .contactform {
   width: 60%;
   padding-left: 20%;
@@ -349,45 +454,6 @@ nav{
 }
 
 /* End Of Contact Section---------------------------------- */
-
-/* Analysis Section---------------------------------- */
-
-.analysissection{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-column-gap: 0;
-    width: 100%;
-    height: 400px;
-    align-content: center;
-    background-color: white;
-}
-
-.analysissection h3{
-    font-family: poppins;
-    text-transform: uppercase;
-}
-
-.analysisimage1{
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    margin-left: 20%;
-}
-
-.analysisimage2{
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-}
-
-.technicalan{
-    margin-left: 10px
-}
-
-.fundamentalan{
-    margin-right: 15%;
-}
-/* End Of Analysis Section---------------------------------- */
 
 /* Social Media Section---------------------------------- */
 
