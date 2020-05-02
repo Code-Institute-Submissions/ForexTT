@@ -1,5 +1,4 @@
 /* General CSS ---------------------------------- */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto+Mono:wght@300&display=swap');
 
 body{
@@ -7,20 +6,21 @@ body{
     padding:0;
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
+    font-size: 16px
 }
 
 p{
-    /*font-family: arial, sans-serif;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 
 }
 
-.dot {
-  height: 10px;
-  width: 10px;
-  margin-right: 10px;
-  background-color: #1c75bc;
-  border-radius: 50%;
-  display: inline-block;
+.dot{
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    background-color: #1c75bc;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .uppercase{
@@ -34,57 +34,15 @@ p{
 a{
     text-decoration: none;
 }
-
-
-/* ---------------------------------- */
-
-/* Top Banner ---------------------------------- */
-
-.banner{
-    display: grid;
-    grid-template-columns: repeat(3, 33.3%);
-    grid-column-gap: 0;
-    text-align: center;
-    width: 100%;
-    height: 30px;
-    background-image: linear-gradient(grey, lightgrey);
-    align-content: center;
-}
-
-.banneremail{
-    padding-top: 5px;
-}
-
-.bannerquestion{
-    float: right;
-    padding-top: 5px;
-}
-
-.bannerbutton{
-    float: left;
-    margin-left: 20px;
-    height: 30px;
-    text-transform: uppercase;
-    background-color:#1c75bc;
-    color: white;
-}
-
-.bannerbutton:hover{
-    background-color: black;
-    transition: 0.5s;
-}
-
 /* ---------------------------------- */
 
 /* Navbar---------------------------------- */
-
 .navbar{
     width: 100%;
     height: 60px;
     display: inline-block;
     padding-top: 2.5%;
     background-color: #F7F7F7;
-    /*border-bottom: 1.5px solid lightgrey;*/
     margin-bottom: -4px;
 }
 
@@ -138,17 +96,17 @@ nav{
 }
 
 .navbarli a::after{
-content:'';
-display: block;
-width: 0;
-height: 2px;
-background: #1c75bc;
-transition: width .3s
+    content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1c75bc;
+    transition: width .3s
 }
 
 .navbarli a:hover::after{
-width: 100%;
-transition: .5s;
+    width: 100%;
+    transition: .5s;
 }
 
 @keyframes slidein {
@@ -179,12 +137,10 @@ transition: .5s;
 .navbarli li:nth-child(1){
     animation-delay: 1.6s;
 }
-
 /* ---------------------------------- */
 
-/* Promo Section---------------------------------- */
-
-.promobanner{
+/* Hero Section---------------------------------- */
+.hero{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-column-gap: 0;
@@ -195,38 +151,37 @@ transition: .5s;
     background-color: #F7F7F7;
 }
 
-.promobannerimage {
-  width: 60%;
-  height: 580px;
-  -ms-transform: skewY(6deg); /* IE 9 */
-  transform: skewY(6deg);
-  background-repeat:no-repeat;
-  background-size:cover;
-  float: left;
-  
+.heroimage{
+    width: 60%;
+    height: 580px;
+    -ms-transform: skewY(6deg); /* IE 9 */
+    transform: skewY(6deg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    float: left;
 }
 
-.promobannertext{
+.herotext{
     margin: 10%;
     margin-left: 45%;
     text-align: left;
     color: #808080;
-
 }
 
-.promobannerh3{
+.herotext h1{
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 2em;
     color: #616161;
 }
 
-.promobannerh32{
+.herotext h2{
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
-.promotextbutton1 a{
+.herobutton1 {
     float: right;
     margin-right: 40px;
     margin-top: 15px;
@@ -241,15 +196,14 @@ transition: .5s;
     border-radius: 8px;
 }
 
-.promotextbutton1 a:hover{
+.herobutton1:hover{
     background-color: #1c75bc;
     color: white;
     border-color: #1c75bc;
     transition: 0.5s;
-
 }
 
-.promotextbutton2 a{
+.herobutton2{
     float: right;
     margin-right: 40px;
     margin-top: 15px;
@@ -263,23 +217,12 @@ transition: .5s;
     border-radius: 8px;
 }
 
-.promotextbutton2 a:hover{
+.herobutton2:hover{
     background-color: #627EDC;
     color: white;
     transition: 0.5s;
 }
-
-.bannerbutton{
-    float: left;
-    margin-left: 20px;
-    height: 30px;
-    text-transform: uppercase;
-    background-color:#1c75bc;
-    color: white;
-}
-
 /* ---------------------------------- */
-
 
 /* Services Section---------------------------------- */
 
