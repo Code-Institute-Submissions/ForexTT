@@ -213,8 +213,6 @@ nav {
     padding-top: 15px
 }
 
-
-
 .herobutton1:hover {
     background-color: #1c75bc;
     color: white;
@@ -243,11 +241,9 @@ nav {
     color: white;
     transition: 0.5s;
 }
-
 /* ---------------------------------- */
 
 /* Services Section---------------------------------- */
-
 .services {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -294,6 +290,10 @@ nav {
     margin-right: 30px;
     margin-top: 50px
 }
+
+.signalsimage_mobile {
+    display: none
+}
 /* ---------------------------------- */
 
 /* Why Invest Section---------------------------------- */
@@ -326,7 +326,7 @@ nav {
     color: #616161;
     font-weight: 700; 
 }
-/* ---------------------------------- */
+/* End Of Why Invest Section---------------------------------- */
 
 /* Analysis Section---------------------------------- */
 .analysissection {
@@ -354,7 +354,7 @@ nav {
     margin: 10px;
 }
 
-.technicalan {
+.tech_analysis {
     width: 65%;
     padding-left: 35%
 }
@@ -365,7 +365,7 @@ nav {
     padding-left: 7px;
 }
 
-.fundamentalan {
+.fund_analysis {
     width: 65%;
     padding-right: 35%;
 }
@@ -382,7 +382,6 @@ nav {
   width: 55%;
   padding-left: 22.5%;
   padding-right: 22.5%;
-  
   padding-top: 60px;
   padding-bottom: 70px;
   background-color: #F7F7F7;
@@ -466,7 +465,7 @@ nav {
     align-content: center;
 }
 
-.freesignalstext {
+.signalstext {
     padding-top: 10px
 }
 
@@ -483,30 +482,30 @@ nav {
     align-content: center;
 }
 
-.image3 {
+.breakdownimage {
     height: 500px;
     width: 300px;
     margin-left: 40%;
 }
 
-.signalsocialicons {
+.socialicons {
     width: 100px;
     height: 100px;
     padding: 10px;
 }
 
-.signalsocialicons:hover {
+.socialicons:hover {
     box-shadow: 1px 1px 1px black;
     border-radius: 60%;
 }
 
-.signalsocialiconsinstagram {
+.socialicons_instagram {
     width: 100px;
     height: 100px;
     padding: 10px;
 }
 
-.signalsocialiconsinstagram:hover {
+.socialicons_instagram:hover {
     box-shadow: 1px 1px 1px black;
     border-radius: 40%;
 }
@@ -587,7 +586,7 @@ footer a {
 
 .subtitle h2 {
     margin: 0;
-    margin-left: 12.5%;
+    margin-left: 10%;
     padding-top: 15px;
     font-size: 24px;
     font-family: cursive, sans-serif;
@@ -604,10 +603,11 @@ footer a {
     padding-bottom: 40px
 }
 
-.contentssection h3 {
+.contentssection h2 {
     font-family: poppins, sans-serif;
     letter-spacing: 1px;
     text-decoration: underline;
+    font-size: 1.1em
 }
 
 .contentssection p {
@@ -658,11 +658,11 @@ footer a {
     padding-bottom: 40px
 }
 
-.contentssectionpp h3 {
+.contentssectionpp h2 {
     font-family: poppins, sans-serif;
     letter-spacing: 1px;
     text-decoration: underline;
-    padding-top: 30px;
+    font-size: 1.1em
 }
 /* End Of Privacy Policy ---------------------------------- */
 
@@ -671,16 +671,14 @@ footer a {
 /* Mobile Media Querys---------------------------------- */
 @media only screen
 and (min-width: 321px)
-and (max-width: 480px){
-    
+and (max-width: 480px){  
    /* General--------------- */
-
-    html{
+    html {
         width: 100%;
         overflow-x: hidden;
     }
 
-    .container{
+    .container {
         display: block;
     }
 
@@ -694,292 +692,393 @@ and (max-width: 480px){
     }
 
     /* Header--------------- */
-
-    .brand{
+    .brand {
         margin-left:25%;
         padding-top: 10px;
     }
     
-    .navbar{
+    .navbar {
         height: 40px
     }
 
-    .navbarli{
+    .navbarli {
         display: none
     }
 
     /* Hero--------------- */
-
-    .hero{
+    .hero {
         display: block;
         width: 80%;
-        height: 450px;
+        height: 400px;
         padding-left: 10%;
         padding-right: 10%;
-        padding-top:5px; 
+        padding-top: 40px; 
+        padding-bottom: 40px; 
         align-content: center;
     }
 
-    .herotext{
+    .herotext {
         padding: 0;
         margin: 0;
     }
 
-    .herotext h1{
-        font-size: 14px
+    .herotext h1 {
+        font-size: 2em
     }
 
-    .herotext h2{
-        font-size: 14px
+    .herotext h2 {
+        font-size: 1.5em
     }
 
-    .herotext p{
-        font-size: 12px
+    .herotext p {
+        font-size: 16px
     }
 
-    .hero a{
+    .hero a {
         margin: 0;
         margin-right: 10px;
         padding: 0;
         display: inline-block
     }
 
-    .herobutton2 a{
+    .herobutton1 {
+        float: right;
+        margin-right: 40px;
+        margin-top: 10px;
+        height: 30px;
         width: 40%;
-        height: 18px;
-        font-size: 10px;
-        padding-top: 5px;
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid grey;
+        color: grey;
+        text-align: center;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        padding-top: 15px
     }
 
-    .herobutton1 a{
-        margin-right: 50px;
-        width: 30%;
-        height: 18px;
-        font-size: 10px;
-        padding-top: 5px;
+    .herobutton2 {
+        float: left;
+        margin-right: 40px;
+        margin-top: 10px;
+        height: 30px;
+        width: 50%;
+        text-transform: uppercase;
+        background-color:#1c75bc;
+        color: white;
+        text-align: center;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        padding-top: 15px
     }
 
-    .heroimage{
+    .herotext a {
+        padding-top: 10px
+    }
+
+    .heroimage {
         display: none;
     }
 
     /* Services--------------- */
-
-    .services{
-        display: block;
+    .services {
+        display: inline;
+        padding: 0;
         margin: 0;
-        height: 590px;
     }
 
-    .accountmanageimage{
+    .container {
+        padding: 0;
+        margin: 0
+    }
+
+    .accountmanagement,
+    .forexsignals {
+        margin: 0;
+        padding: 0;
+    }
+
+    .accountmanagement {
+        display: grid;
+        grid-template-columns: repeat(2, 30% 70%);
+        grid-column-gap: 0;
+        padding: 0;
+        margin: 0;
+        height: 170px;
         padding-top: 20px
     }
 
-    .accountmanageimage,
-    .forexsignalsimage{
+    .forexsignals {
+        display: grid;
+        grid-template-columns: repeat(2, 70% 30%);
+        grid-column-gap: 0;
+        padding: 0;
         margin: 0;
-        height: 120px;
-        width: 40%;
-        padding-right: 30%;
-        padding-left: 30%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 5.625px;
+        height: 190px;
     }
 
-    .accountmanagement h3,
-    .forexsignals h3{
-        font-size: 12px;
+    .accountmanageimage {
+        margin: 0;
+        height: 120px;
+        width: 90%;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 35px
+    }
+
+    .forexsignalsimage {
+        display: none;
+    }
+
+    .signalsimage_mobile {
+        display: block;
+        margin: 0;
+        height: 120px;
+        width: 90%;
+        padding-right: 10%;
+        padding-left: 0%;
+        padding-top: 35px
+    }
+
+    .accountmanagement h2,
+    .forexsignals h2 {
+        font-size: 1.25em;
+        margin: 0;
+        margin-top: 12px;
+    }
+
+    .services p {
+        font-size: 16px;
+        margin-bottom: 6px;
+        margin-top: 6px;
+    }
+
+    /* Why Invest--------------- */
+    .whyinvest {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+
+    .whyinvest h2 {
+        font-size: 1.5em
+    }
+
+    .whyinvest p:nth-child(8) {
+        display: none
+    }
+
+    .whyinvest br {
+        display: none
+    }
+
+    /* Analysis--------------- */
+    .analysissection {
+        display: block;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+
+    .tech_analysis {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    .fund_analysis {
+        width: 100%;
+        margin: 0;
+        padding: 0
+
+    }
+
+    .fund_analysis h2 {
+        padding-top: 20px
+    }
+
+    .tech_analysis h2,
+    .fund_analysis h2 {
+        font-size: 1.5em;
         margin: 0;
         margin-bottom: 12px;
         text-align: center
     }
 
-    .accountmanagement,
-    .forexsignals{
-        margin: 0;
-        padding: 0;
-        width: 60%;
-        padding-left: 20%;
-        padding-right: 20%;
-    }
-
-    .services p{
-        font-size: 12px;
-        padding-left: 25px;
-        margin: 10px;
-    }
-
-    /* Contact Form--------------- */
-
-    .callback-info h3{
-        font-size: 14px
-    }
-
-    .callback-info p{
+    .tech_analysis p br,
+    .fund_analysis p br {
         display: none;
     }
 
-    .contactform{
-        height: 165px;
-        width: 87.5%;
-        padding-left: 7.5%;
+    .fund_analysis {
+    margin: 0;
+    }
+
+    /* Contact Form--------------- */
+    .contactform {
+        width: 90%;
+        padding-left: 5%;
         padding-right: 5%;
         padding-top: 6%;
         padding-bottom: 6%;
     }
 
-    /* Analysis--------------- */
-
-    .analysissection{
-        display: block;
-        margin: 0;
-        height: 440px;
+    .contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 10px;
     }
 
-    .analysissection p{
-        font-size: 12px
+    #name,
+    #phone,
+    #email {
+        width: 82%
     }
 
-    .analysisimage1,
-    .analysisimage2{
-        margin: 0;
-        margin-top: 25px;
-        height: 120px;
-        width: 40%;
-        padding-right: 30%;
-        padding-left: 30%;
-    }
-
-    .technicalan h3,
-    .fundamentalan h3{
-        font-size: 12px;
-        margin: 0;
-        margin-bottom: 12px;
-        text-align: center
-    }
-
-    .technicalan p,
-    .fundamentalan p{
-        font-size: 10px;
-        margin: 0;
+    .callback-info h2 {
+        font-size: 1.5em;
         text-align: center;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        padding-bottom: 10px
     }
 
-    .technicalan p br,
-    .fundamentalan p br{
+    .callback-info p {
         display: none;
     }
 
-    .fundamentalan {
-    margin: 0;
-    }
-
     /* Socials--------------- */
-
-    .freesignals{
+    .freesignals {
         display: block;
-        height: 240px;
-        width: 87.5%;
-        padding-left: 7.5%;
+        width: 90%;
+        padding-left: 5%;
         padding-right: 5%;
+        padding-top: 50px;
+        padding-bottom: 50px
     }
 
-    .image3{
+    .breakdownimage {
         display: none
     }
 
-    .freesignalstext h3{
-        font-size: 14px;
-        padding-top: 40px;
+    .signalstext h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
     }
 
-    .freesignalstext p {
-        font-size: 11px
+    .signalstext p {
+        font-size: 16px
     }
 
-    .freesignalssocials{
+    .signalssocials {
         display: inline-block;
         width: 100%;
     }
 
-    .signalsocialicons,
-    .signalsocialiconsinstagram{
+    .socialicons,
+    .socialicons_instagram {
         height: 65px;
         width: 65px;
-        margin: -4px
+        margin: -2.5px
     }
 
     /* Footer--------------- */
+    footer {
+        padding-top: 20px
+    }
 
-    .footer{
+    .footer {
         display: inline;
     }
 
-    footer p{
-        font-size: 10px
+    footer p {
+        font-size: 12px
     }
 
-    .footeraddress{
+    .footeraddress {
         display: none;
     }
 
-    .footerlegal{
+    .footerlegal {
         margin-top: -15px
     }
 
-    .lowerfooter{
+    .lowerfooter {
         display: block;
         width: 80%;
         padding-left: 10%;
         padding-right: 10%;
         padding: 20px;
         padding-bottom: 30px;
+        text-align: right
     }
 
-    .copyright{
+    .copyright {
         display: none
     }
 
-    .designedby{
-        display: inline-block
+    .designedby {
+        display: inline-block;
     }
 
-    .designedbytext{
+    .designedbytext {
         float: left;
         margin: 0;
         padding: 0;
     }
 
-    .designedbyimage{
+    .designedbyimage {
         float: right;
         margin: 0;
         padding: 0;
     }
 
-    .responsivecopyright{
+    .responsivecopyright {
         display: block;
         padding: 5px;
         padding-left: 40px;
         text-align: center
-        
+    }
+
+    /* T&C's and Policy Page's--------------- */
+    .subtitle h2 {
+        width: 85%;
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.25em;
+    }
+
+    .contentssection {
+        width: 85%;
+        padding-left: 5%;
+        padding-right: 5%
+    }
+
+    .contentssectionpp {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%
     }
 }
 
 /* Tablet Media Querys---------------------------------- */
-
 @media only screen
 and (min-width: 766px)
-and (max-width: 1024px){
-
-    /* General--------------- */
-
-    html{
+and (max-width: 1024px){  
+   /* General--------------- */
+    html {
         width: 100%;
         overflow-x: hidden;
     }
 
-    .container{
+    .container {
         display: block;
     }
 
@@ -993,308 +1092,375 @@ and (max-width: 1024px){
     }
 
     /* Header--------------- */
-
-    .brand{
-        width: 30%;
-        padding-left:35%;
-        padding-right: 35%;
+    .brand {
+        margin-left: 37.5%;
         padding-top: 10px;
-        margin:0;
     }
     
-    .navbar{
+    .navbar {
         height: 40px
     }
 
-    .navbarli{
+    .navbarli {
         display: none
     }
 
-    /* Promo--------------- */
-
-    .promobanner{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-column-gap: 0;
-        text-align: center;
-        width: 100%;
-        height: 700px;
+    /* Hero--------------- */
+    .hero {
+        display: block;
+        width: 75%;
+        height: 360px;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        padding-top: 80px; 
+        padding-bottom: 40px; 
         align-content: center;
-        background-color: #F7F7F7;
     }
 
-    .promobannerimage {
-       width: 100%;
-       height: 580px;
-       -ms-transform: skewY(6deg); /* IE 9 */
-       transform: skewY(6deg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       float: left;
-    }
-
-    .promobannertext{
-        width: 100%;
-        padding-left: 10%;
-        padding-top: 20%;
+    .herotext {
+        padding: 0;
         margin: 0;
     }
 
-    .promobannerh3{
-        font-size: 16px
+    .herotext h1 {
+        font-size: 2em
     }
 
-    .promobannerh32{
-        font-size: 16px
+    .herotext h2 {
+        font-size: 1.5em
     }
 
-    .promobannertext p{
-        font-size: 14px
+    .herotext p {
+        font-size: 1.1em
     }
 
-    .promobanner a{
+    .hero a {
         margin: 0;
-        margin-right: 10px;
+        margin-right: 5px;
         padding: 0;
         display: inline-block
     }
 
-    .promotextbutton2 a{
-        width: 45%;
-        height: 26px;
-        font-size: 13px;
-        padding-top: 10px;
+    .herobutton1 {
+        float: right;
+        margin-right: 40px;
+        margin-top: 10px;
+        height: 40px;
+        width: 40%;
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid grey;
+        color: grey;
+        text-align: center;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        padding-top: 15px
     }
 
-    .promotextbutton1 a{
-        margin-right: 50px;
-        width: 35%;
-        height: 26px;
-        font-size: 13px;
-        padding-top: 10px;
+    .herobutton2 {
+        float: left;
+        margin-right: 40px;
+        margin-top: 10px;
+        height: 40px;
+        width: 50%;
+        text-transform: uppercase;
+        background-color:#1c75bc;
+        color: white;
+        text-align: center;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        padding-top: 15px
     }
 
-    .promobannerimage{
-        display: inline-block;
+    .herotext a {
+        padding-top: 15px
+    }
+
+    .heroimage {
+        display: none;
     }
 
     /* Services--------------- */
-
-    .homeservices{
-        display: block;
-        margin: 0;
-        height: 420px;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-column-gap: 0;
+    .services {
+        display: inline;
     }
-
-    .accountmanageimage,
-    .forexsignalsimage{
-        margin: 0;
-        height: 160px;
-        width: 60%;
-        padding-right: 20%;
-        padding-left: 20%;
-    }
-
-    .accountmanagement h3,
-    .forexsignals h3{
-        font-size: 15px;
-        margin: 0;
-        margin-bottom: 12px;
-        text-align: center
+    
+    .container {
+        padding: 0;
+        margin: 0
     }
 
     .accountmanagement,
-    .forexsignals{
+    .forexsignals {
         margin: 0;
         padding: 0;
-        width: 70%;
-        padding-left: 15%;
-        padding-right: 15%;
     }
 
-    .homeservices p{
-        font-size: 14px;
-        padding-left: 25px;
-        margin: 10px;
+    .accountmanagement {
+        display: grid;
+        grid-template-columns: repeat(2, 30% 45%);
+        grid-column-gap: 0;
+        padding: 0;
+        margin: 0;
+        height: 170px;
+        padding-top: 50px;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
     }
 
-    /* Contact Form--------------- */
-
-    .callback-info h3{
-        font-size: 14px
+    .forexsignals {
+        display: grid;
+        grid-template-columns: repeat(2, 45% 30%);
+        grid-column-gap: 0;
+        padding: 0;
+        margin: 0;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        height: 230px;
     }
 
-    .callback-info p{
+    .accountmanageimage {
+        margin: 0;
+        height: 220px;
+        width: 90%;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 15px
+    }
+
+    .forexsignalsimage {
         display: none;
     }
 
-    .contactform{
-        height: 160px;
-        width: 87.5%;
-        padding-left: 7.5%;
+    .signalsimage_mobile {
+        display: block;
+        margin: 0;
+        height: 200px;
+        width: 90%;
+        
+        padding-left: 0%;
+        padding-top: 15px
+    }
+
+    .accountmanagement h2,
+    .forexsignals h2 {
+        font-size: 1.5em;
+        margin: 0;
+        margin-top: 12px;
+    }
+
+    .services p {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .accounttext {
+        padding-left: 15%
+    }
+
+    /* Why Invest--------------- */
+    .whyinvest {
+        width: 90%;
+        padding-left: 5%;
         padding-right: 5%;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+
+    .whyinvest h2 {
+        font-size: 1.5em;
+        padding-top: 20px    
+    }
+
+    .whyinvest p:nth-child(8) {
+        padding-bottom: 20px
+    }
+
+    .whyinvest p {
+        font-size: 1.1em
     }
 
     /* Analysis--------------- */
-
-    .analysissection{
+    .analysissection {
         display: block;
         margin: 0;
-        height: 300px;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-column-gap: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 75%;
+        padding-left: 12.5%;
+        padding-right: 12.5%
     }
 
-    .analysissection p{
-        font-size: 14px
+    .analysissection p {
+        font-size: 1.2em
     }
 
-    .analysisimage1,
-    .analysisimage2{
+    .tech_analysis {
+        width: 100%;
         margin: 0;
-        margin-top: 5px;
-        height: 120px;
-        width: 40%;
-        padding-right: 30%;
-        padding-left: 30%;
+        padding: 0
     }
 
-    .technicalan h3,
-    .fundamentalan h3{
-        font-size: 15px;
+    .fund_analysis {
+        width: 100%;
+        margin: 0;
+        padding: 0
+
+    }
+
+    .fund_analysis h2 {
+        padding-top: 40px
+    }
+
+    .tech_analysis h2,
+    .fund_analysis h2 {
+        font-size: 1.5em;
         margin: 0;
         margin-bottom: 12px;
         text-align: center
     }
 
-    .technicalan p,
-    .fundamentalan p{
-        font-size: 14px;
-        margin: 0;
-        text-align: center;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .technicalan p br,
-    .fundamentalan p br{
+    .tech_analysis p br,
+    .fund_analysis p br {
         display: none;
     }
 
-    .fundamentalan {
+    .fund_analysis {
     margin: 0;
     }
 
-    /* Socials--------------- */
+    /* Contact Form--------------- */
+    .contactform {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
 
-    .freesignals{
-        display: block;
-        height: 480px;
-        width: 98%;
-        padding:1%;
+    .contact form {
         display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-column-gap: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 25px;
     }
 
-    .freesignalstext{
-        margin-left: -20px
+    #name,
+    #phone,
+    #email {
+        width: 90%
     }
 
-    .forexsignalsimages{
-        padding-left: 40px
+    .callback-info h2 {
+        font-size: 1.5em;
+        text-align: center;
+        padding-bottom: 15px
     }
 
-    .image3{
-        display: inline-block;
-        padding: 0;
-        margin:0;
-    }
-
-    .freesignalstext h3{
-        font-size: 16px;
-        padding-top: 40px;
-    }
-
-    .freesignalstext p {
-        font-size: 13px
-    }
-
-    .freesignalssocials{
-        display: inline-block;
-        width: 100%;
-    }
-
-    .signalsocialicons,
-    .signalsocialiconsinstagram{
-        height: 65px;
-        width: 65px;
-        margin: -4px
-    }
-
-    /* Footer--------------- */
-
-    .footer{
-        display: inline;
-    }
-
-    footer p{
-        font-size: 13px
-    }
-
-    .footeraddress{
-        display: none;
-    }
-
-    .footerlegal{
-        margin-top: -15px
-    }
-
-    .lowerfooter{
-        display: block;
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding: 20px;
-        padding-bottom: 30px;
-    }
-
-    .copyright{
+    .callback-info p {
         display: none
     }
 
-    .designedby{
-        display: inline-block
+    /* Socials--------------- */
+    .freesignals {
+        display: block;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 50px;
+        padding-bottom: 50px
     }
 
-    .designedbytext{
+    .breakdownimage {
+        display: none
+    }
+
+    .signalstext h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .textwrapper p {
+        padding-left: 12.5%;
+    }
+    .signalstext p {
+        font-size: 1.1em
+    }
+
+    .signalssocials {
+        display: inline-block;
+        width: 77.5%;
+        padding-left: 12.5%;
+        padding-right: 10%
+    }
+
+    .socialicons,
+    .socialicons_instagram {
+        height: 100px;
+        width: 100px;
+        margin: 5px
+    }
+
+    /* Footer--------------- */
+    footer {
+        padding-top: 20px
+    }
+
+    .footer {
+        display: inline;
+    }
+
+    footer p {
+        font-size: 16px
+    }
+
+    .footeraddress {
+        display: none;
+    }
+
+    .footerlegal {
+        margin-top: -15px
+    }
+
+    .lowerfooter {
+        display: block;
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        padding: 20px;
+        padding-bottom: 30px;
+        text-align: center
+    }
+
+    .copyright {
+        display: none
+    }
+
+    .designedby {
+        display: inline-block;
+    }
+
+    .designedbytext {
         float: left;
         margin: 0;
         padding: 0;
     }
 
-    .designedbyimage{
+    .designedbyimage {
         float: right;
         margin: 0;
         padding: 0;
     }
 
-    .responsivecopyright{
+    .responsivecopyright {
         display: block;
         padding: 5px;
-        padding-left: 40px;
         text-align: center
-        
     }
-
 }
-
-
 /* End---------------------------------- */
