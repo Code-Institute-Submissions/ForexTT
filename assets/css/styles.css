@@ -1,7 +1,8 @@
-/* General CSS ---------------------------------- */
+/* Google Fonts ---------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto+Mono:wght@300&display=swap');
 
-body{
+/* General CSS ---------------------------------- */
+body {
     margin:0;
     padding:0;
     font-family: 'oswald', sans-serif;
@@ -9,16 +10,20 @@ body{
     font-size: 16px
 }
 
-p{
+p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #616161;
 }
 
-h2{
-    color: #444444
+h2 {
+    color: #444444;
+    font-family: poppins, sans-serif;
+    font-size: 1.75em;
+    text-decoration: underline;
+    text-transform: uppercase
 }
 
-.dot{
+.dot {
     height: 10px;
     width: 10px;
     margin-right: 10px;
@@ -27,21 +32,17 @@ h2{
     display: inline-block;
 }
 
-.uppercase{
-    text-transform: uppercase;
-}
-
-.container{
+.container {
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
 }
 /* ---------------------------------- */
 
 /* Navbar---------------------------------- */
-.navbar{
+.navbar {
     width: 100%;
     height: 60px;
     display: inline-block;
@@ -50,17 +51,17 @@ a{
     margin-bottom: -4px;
 }
 
-nav{
+nav {
     margin-right: 12.5%;
 }
 
-.border{
+.border {
     height: 1px;
     width: 100%;
     background-color:lightgrey;
 }
 
-.brand{
+.brand {
     display: inline-block;
     float: left;
     margin-top: 0;
@@ -72,18 +73,22 @@ nav{
     animation: slidein .5s forwards;
 }
 
-.brand span{
+.brand a {
+    color: #808080
+}
+
+.brand span {
     color: #1c75bc;
 }
 
-.navbarli ul{
+.navbarli ul {
     list-style:none;
     text-align: center;
     margin: 0;
     padding-right: 20px;
 }
 
-.navbarli li{
+.navbarli li {
     font-size: 1.2em;
     height: 40px;
     display: inline-block;
@@ -93,13 +98,13 @@ nav{
     animation: slidein .5s forwards;
 }
 
-.navbarli a{
+.navbarli a {
     text-decoration: none;
     color: grey;
     display: block;
 }
 
-.navbarli a::after{
+.navbarli a::after {
     content:'';
     display: block;
     width: 0;
@@ -108,7 +113,7 @@ nav{
     transition: width .3s
 }
 
-.navbarli a:hover::after{
+.navbarli a:hover::after {
     width: 100%;
     transition: .5s;
 }
@@ -122,29 +127,29 @@ nav{
     }
 }
 
-.navbarli li:nth-child(5){
+.navbarli li:nth-child(5) {
     animation-delay: 0s;
 }
 
-.navbarli li:nth-child(4){
+.navbarli li:nth-child(4) {
     animation-delay: .4s;
 }
 
-.navbarli li:nth-child(3){
+.navbarli li:nth-child(3) {
     animation-delay: .8s;
 }
 
-.navbarli li:nth-child(2){
+.navbarli li:nth-child(2) {
     animation-delay: 1.2s;
 }
 
-.navbarli li:nth-child(1){
+.navbarli li:nth-child(1) {
     animation-delay: 1.6s;
 }
 /* ---------------------------------- */
 
 /* Hero Section---------------------------------- */
-.hero{
+.hero {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-column-gap: 0;
@@ -155,42 +160,47 @@ nav{
     background-color: #F7F7F7;
 }
 
-.heroimage{
+.heroimage {
     width: 60%;
-    height: 580px;
+    height: 95%;
     -ms-transform: skewY(6deg); /* IE 9 */
     transform: skewY(6deg);
     background-repeat:no-repeat;
     background-size:cover;
-    float: left;
 }
 
-.herotext{
+.herotext {
     margin: 10%;
     margin-left: 45%;
     text-align: left;
     color: #808080;
 }
 
-.herotext h1{
+.herotext h1 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.25em;
     color: #616161;
 }
 
-.herotext h2{
+.herotext h2 {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.75em;
     letter-spacing: 1px;
+    text-decoration: none;
+    font-family: arial
+}
+
+.herotext p {
+    font-size: 1.20em
 }
 
 .herobutton1 {
     float: right;
     margin-right: 40px;
-    margin-top: 15px;
-    height: 20px;
+    margin-top: 10px;
+    height: 30px;
     width: 110px;
     text-transform: uppercase;
     background-color: white;
@@ -199,20 +209,24 @@ nav{
     text-align: center;
     padding: 8px;
     border-radius: 8px;
+    font-size: 16px;
+    padding-top: 15px
 }
 
-.herobutton1:hover{
+
+
+.herobutton1:hover {
     background-color: #1c75bc;
     color: white;
     border-color: #1c75bc;
     transition: 0.5s;
 }
 
-.herobutton2{
+.herobutton2 {
     float: right;
     margin-right: 40px;
-    margin-top: 15px;
-    height: 20px;
+    margin-top: 10px;
+    height: 30px;
     width: 200px;
     text-transform: uppercase;
     background-color:#1c75bc;
@@ -220,182 +234,168 @@ nav{
     text-align: center;
     padding: 8px;
     border-radius: 8px;
+    font-size: 16px;
+    padding-top: 15px
 }
 
-.herobutton2:hover{
+.herobutton2:hover {
     background-color: #627EDC;
     color: white;
     transition: 0.5s;
 }
+
 /* ---------------------------------- */
 
 /* Services Section---------------------------------- */
 
-.homeservices{
+.services {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-column-gap: 0;
     width: 100%;
-    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     align-content: center;
     background-color: white;
 }
 
-.homeservices h2{
-    font-family: poppins, sans-serif;
-    color: #444444;
-    font-size: 1.75em;
-    text-decoration: underline
+.services p {
+    font-size: 18px
 }
 
-
-
-.accountmanagement{
-   /* margin-left: 30px;*/
-   
-   
+.accountmanagement {
    width: 100%;
-       
-
 }
 
-.forexsignals{
-    
+.forexsignals {
     width: 100%;
-    
-    
+    padding-left: 8%  
 }
 
-.container{
+.container {
     display: flex;
 }
 
 
-.accountmanageimage{
+.accountmanageimage {
     height: 200px;
     width: 200px;
     margin: 10px;
     margin-left: 35%;
     margin-right: 30px;
+    margin-top: 50px
     
 }
 
-.forexsignalsimage{
+.forexsignalsimage {
     height: 200px;
     width: 200px;
     margin: 10px;
+    margin-right: 30px;
+    margin-top: 50px
 }
 /* ---------------------------------- */
 
 /* Why Invest Section---------------------------------- */
-.whyinvest{
+.whyinvest {
     width: 65%;
-    height: 1350px;
     background-color: #F7F7F7;
     margin: 0;
     padding-left: 17.5%;
     padding-right: 17.5%;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.whyinvest h2{
-    font-family: poppins, sans-serif;
-    font-size: 1.75em;
-    text-decoration: underline;
-    color: #444444;
+.whyinvest h2 {
     letter-spacing: 2px;
     padding-top: 20px;
-    text-transform: uppercase
 }
 
-.whyinvest p{
+.whyinvest h2:nth-child(1) {
+    padding-top: 0px;
+    margin: 0
+}
+
+.whyinvest p {
     color: #616161
 }
 
-.whyinvest span{
+.whyinvest span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #616161;
     font-weight: 700; 
 }
-
 /* ---------------------------------- */
 
 /* Analysis Section---------------------------------- */
-
-.analysissection{
+.analysissection {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-column-gap: 0;
     width: 100%;
-    height: 400px;
     align-content: center;
     background-color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.analysissection h2{
-    font-family: poppins;
-    text-transform: uppercase;
-    font-size: 1.75em;
-    text-decoration: underline
-}
-
-.analysisimage1{
+.analysisimage1 {
     height: 200px;
     width: 200px;
     margin: 10px;
     margin-left: 20%;
 }
 
-.analysisimage2{
+.analysisimage2 {
     height: 100px;
     width: 100px;
     margin: 10px;
 }
 
-.technicalan{
+.technicalan {
     width: 65%;
     padding-left: 35%
 }
 
-.tech_img{
+.tech_img {
     height: 28px;
     width: 28px;
     padding-left: 7px;
 }
 
-
-.fundamentalan{
+.fundamentalan {
     width: 65%;
     padding-right: 35%;
 }
 
-.fund_img{
+.fund_img {
     height: 28px;
     width: 28px;
     padding-left: 10px;
 }
 /* End Of Analysis Section---------------------------------- */
 
-
 /* Contact Form Section---------------------------------- */
 .contactform {
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  width: 55%;
+  padding-left: 22.5%;
+  padding-right: 22.5%;
+  
+  padding-top: 60px;
+  padding-bottom: 70px;
   background-color: #F7F7F7;
 }
 
-.contactform h3{
-    font-family: Arial, sans-serif
+.contactform h2 {
+    margin: 0
 }
 
 .contact form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 10px 30px;
 }
 
 .contact form p {
@@ -404,8 +404,8 @@ nav{
 
 .contact form button,
 .contact form input,
-.contact form textarea{
-  width: 80%;
+.contact form textarea {
+  width: 93%;
   padding: 1em;
   border: solid 1px #1c75bc;
   border-radius: 4px;
@@ -417,6 +417,7 @@ nav{
 
 .contact form button {
   background: #1c75bc;
+  width: 99%;
   border: 0;
   color: #e4e4e4;
   text-transform: uppercase;
@@ -432,118 +433,110 @@ nav{
   transition: background-color .5s ease-out;
 }
 
-#name{
+#name {
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
 	background-size: 30px 30px;
-	background-position: 420px 7px;
+    background-position: 95%;
 	background-repeat: no-repeat;
 }
 
-#email{
+#email {
 	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
 	background-size: 30px 30px;
-	background-position: 420px 7px;
+	background-position: 95%;
 	background-repeat: no-repeat;
 }
 
-#phone{
+#phone {
 	background-image: url(https://www.peabody.org.uk/images/rebrand2018_svg/phone.icon.svg);
 	background-size: 30px 30px;
-	background-position: 420px 7px;
+	background-position: 95%;
 	background-repeat: no-repeat;
 }
-
 /* End Of Contact Section---------------------------------- */
 
 /* Social Media Section---------------------------------- */
-
-.freesignals{
+.freesignals {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-column-gap: 0;
-    /*text-align: center;*/
     width: 100%;
-    height: 600px;
-    padding-bottom: 100px;
-    background-color: #F7F7F7;
+    padding-top: 80px;
+    padding-bottom: 80px;
     align-content: center;
 }
 
-.freesignals h3{
-    font-family: poppins
+.freesignalstext {
+    padding-top: 10px
 }
 
-.freesignals span{
-    font-family: poppins
+.freesignals span {
+    font-family: poppins;
+    text-transform: uppercase
 }
 
-.forexsignalsimages{
+.freesignals p {
+    font-size: 18px
+}
+
+.forexsignalsimages {
     align-content: center;
-
-
 }
 
-.image3{
-    height: 400px;
-    width: 250px;
-    margin-left: 30%;
-    border: 5px solid lightgrey;
-    border-radius: 5px;
-    box-shadow: 10px 10px 5px grey;
+.image3 {
+    height: 500px;
+    width: 300px;
+    margin-left: 40%;
 }
 
-.signalsocialicons{
+.signalsocialicons {
     width: 100px;
     height: 100px;
     padding: 10px;
 }
 
-.signalsocialicons:hover{
+.signalsocialicons:hover {
     box-shadow: 1px 1px 1px black;
     border-radius: 60%;
 }
 
-.signalsocialiconsinstagram{
+.signalsocialiconsinstagram {
     width: 100px;
     height: 100px;
     padding: 10px;
 }
 
-.signalsocialiconsinstagram:hover{
+.signalsocialiconsinstagram:hover {
     box-shadow: 1px 1px 1px black;
     border-radius: 40%;
 }
-
 /* End Of Socials Section---------------------------------- */
 
-
 /* Footer---------------------------------- */
-
-footer{
+footer {
         background-color: #F7F7F7;
 }
 
-
-.footer{
+.footer {
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-column-gap: 0;
     text-align: center;
     width: 100%;
-    height: 130px;
+    padding-top: 20px;
     align-content: center;
 }
 
-.footerheader{
+.footerheader {
     font-family: poppins
 }
 
-footer a{
+footer a {
     text-decoration: underline;
     color: black
 }
 
-.lowerfooter{
+.lowerfooter {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-column-gap: 0;
@@ -554,7 +547,7 @@ footer a{
     align-content: center;
 }
 
-.dividingline{
+.dividingline {
     height: 1px;
     width: 80%;
     margin-left: 10%;
@@ -562,38 +555,29 @@ footer a{
     background-color: grey;
 }
 
-.copyright{
-    
-}
-
-.designedby{
+.designedby {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-column-gap: 0;
-    
 }
 
-.designedbytext{
+.designedbytext {
     padding-left: 275px
-
 }
 
-.designedbyimage{
+.designedbyimage {
     padding-right: 300px
 }
 
-.responsivecopyright{
+.responsivecopyright {
     display: none;
 }
-
 /* End Of Footer---------------------------------- */
-
 
 /* -------------------------------------------------  Next Page ------------------------------------------------- */
 
 /* Terms & Conditions ---------------------------------- */
-
-.subtitle{
+.subtitle {
     width: 100%;
     height: 100px;
     margin: 0;
@@ -601,7 +585,7 @@ footer a{
     border-bottom: 1px solid lightgrey;
 }
 
-.subtitle h2{
+.subtitle h2 {
     margin: 0;
     margin-left: 12.5%;
     padding-top: 15px;
@@ -612,7 +596,7 @@ footer a{
     text-transform: uppercase;
 }
 
-.contentssection{
+.contentssection {
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
@@ -620,56 +604,53 @@ footer a{
     padding-bottom: 40px
 }
 
-.contentssection h3{
+.contentssection h3 {
     font-family: poppins, sans-serif;
     letter-spacing: 1px;
     text-decoration: underline;
 }
 
-.contentssection p{
+.contentssection p {
     padding-top: 5px;
     padding-bottom: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.small{
+.small {
     font-size: 12px;
     margin: 0;
     padding: 0;
 }
 
-.contentssection p:nth-child(2){
+.contentssection p:nth-child(2) {
     padding-top: 0px;
     margin-top: 0px;
     padding-bottom: 0px
 }
 
-.contentssection p:nth-child(3){
+.contentssection p:nth-child(3) {
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0px;
 }
 
-.contentssection p:nth-child(4){
+.contentssection p:nth-child(4) {
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0px;
 }
 
-.contentssection p:nth-child(5){
+.contentssection p:nth-child(5) {
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0px;
 }
-
 /* End Of Terms & Conditions ---------------------------------- */
 
 /* -------------------------------------------------  Next Page ------------------------------------------------- */
 
 /* Privacy Policy ---------------------------------- */
-
-
-.contentssectionpp{
+.contentssectionpp {
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
@@ -677,15 +658,17 @@ footer a{
     padding-bottom: 40px
 }
 
-.contentssectionpp h3{
+.contentssectionpp h3 {
     font-family: poppins, sans-serif;
     letter-spacing: 1px;
     text-decoration: underline;
     padding-top: 30px;
 }
+/* End Of Privacy Policy ---------------------------------- */
 
-/* Home Page Media Querys---------------------------------- */
+/* ---------------------------------- Media Querys ---------------------------------- */
 
+/* Mobile Media Querys---------------------------------- */
 @media only screen
 and (min-width: 321px)
 and (max-width: 480px){
@@ -725,50 +708,50 @@ and (max-width: 480px){
         display: none
     }
 
-    /* Promo--------------- */
+    /* Hero--------------- */
 
-    .promobanner{
+    .hero{
         display: block;
         width: 80%;
-        height: 150px;
+        height: 450px;
         padding-left: 10%;
         padding-right: 10%;
         padding-top:5px; 
         align-content: center;
     }
 
-    .promobannertext{
+    .herotext{
         padding: 0;
         margin: 0;
     }
 
-    .promobannerh3{
+    .herotext h1{
         font-size: 14px
     }
 
-    .promobannerh32{
+    .herotext h2{
         font-size: 14px
     }
 
-    .promobannertext p{
+    .herotext p{
         font-size: 12px
     }
 
-    .promobanner a{
+    .hero a{
         margin: 0;
         margin-right: 10px;
         padding: 0;
         display: inline-block
     }
 
-    .promotextbutton2 a{
+    .herobutton2 a{
         width: 40%;
         height: 18px;
         font-size: 10px;
         padding-top: 5px;
     }
 
-    .promotextbutton1 a{
+    .herobutton1 a{
         margin-right: 50px;
         width: 30%;
         height: 18px;
@@ -776,13 +759,13 @@ and (max-width: 480px){
         padding-top: 5px;
     }
 
-    .promobannerimage{
+    .heroimage{
         display: none;
     }
 
     /* Services--------------- */
 
-    .homeservices{
+    .services{
         display: block;
         margin: 0;
         height: 590px;
@@ -818,7 +801,7 @@ and (max-width: 480px){
         padding-right: 20%;
     }
 
-    .homeservices p{
+    .services p{
         font-size: 12px;
         padding-left: 25px;
         margin: 10px;
