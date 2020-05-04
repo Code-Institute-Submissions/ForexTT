@@ -424,6 +424,10 @@ nav {
   font-weight: bold;
 }
 
+.contact form button a{
+    color: #ffffff
+}
+
 .contact form button:hover,
 .contact form button:focus {
   background: #3952a3;
