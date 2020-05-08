@@ -318,14 +318,67 @@ nav {
 }
 
 .whyinvest p {
-    color: #616161
+    color: #616161;
+    font-size: 1.1em
 }
 
-.whyinvest span {
+.how_why {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 10%;
+    width: 90%;
+}
+
+.how_why h2 {
+    text-align: center
+}
+
+.when {
+    padding-top: 60px
+}
+
+.when h2 {
+    text-align: center;
+}
+
+.why_not {
+    padding-top: 30px
+}
+
+.why_not span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #616161;
+    font-size: 1.6em;
     font-weight: 700; 
 }
+
+.why_not_points {
+    display: grid;
+    grid-template-columns: repeat( 2, 50%);
+    grid-column-gap: 10%;
+    width: 90%;
+}
+
+.why_not_image_div {
+    padding-left: 20%
+}
+    
+.why_not_image {
+    width: 350px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    transform: scaleX(-1);
+    border-radius: 50%;
+}
+
+.why_not_bulletpoints{
+    padding-top: 8%;
+    width: 70%;
+}
+
+
 /* End Of Why Invest Section---------------------------------- */
 
 /* Analysis Section---------------------------------- */
@@ -594,7 +647,6 @@ footer a {
     margin-left: 10%;
     padding-top: 15px;
     font-size: 24px;
-    font-family: cursive, sans-serif;
     color: grey;
     text-shadow: 1px 1px 1px lightgrey;
     text-transform: uppercase;
@@ -869,11 +921,15 @@ and (max-width: 480px){
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 40px;
-        padding-bottom: 40px
+        padding-bottom: 40px;
     }
 
     .whyinvest h2 {
         font-size: 1.5em
+    }
+
+    .whyinvest p {
+        font-size: 16px;
     }
 
     .whyinvest p:nth-child(8) {
@@ -882,6 +938,32 @@ and (max-width: 480px){
 
     .whyinvest br {
         display: none
+    }
+
+    .why_not span {
+        font-size: 1.1em
+    }
+
+    .how_why {
+        display: block;
+        width: 100%;
+    }
+
+    .why_not_points {
+        display: block
+    }
+
+    .why_not_image_div {
+        display: none
+    }
+
+    .why_not_bulletpoints {
+        width: 100%;
+        padding-top: 0
+    }
+
+    .when {
+        padding-top: 5px
     }
 
     /* Analysis--------------- */
@@ -935,15 +1017,9 @@ and (max-width: 480px){
         padding-bottom: 6%;
     }
 
-    /*.contact form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px 10px;
-    }*/
-
     .contact form {
         display: block
-}
+    }
 
     #name,
     #phone,
@@ -1262,7 +1338,6 @@ and (max-width: 1024px){
         margin: 0;
         height: 200px;
         width: 90%;
-        
         padding-left: 0%;
         padding-top: 15px
     }
@@ -1304,6 +1379,37 @@ and (max-width: 1024px){
 
     .whyinvest p {
         font-size: 1.1em
+    }
+
+    .how_why br {
+        display: none
+    }
+
+    .why p:nth-child(2) {
+        display: none
+    }
+
+    .why_not_points {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 0;
+        width: 100%
+    }
+
+    .why_not_image_div {
+        padding-left: 0
+    }
+
+    .why_not_image {
+        padding: 0;
+        margin: 10%;
+        width: 80%;
+        height: 80%;
+    }
+
+    .why_not_bulletpoints {
+        width: 100%;
+        padding: 0
     }
 
     /* Analysis--------------- */
@@ -1386,6 +1492,10 @@ and (max-width: 1024px){
         display: none
     }
 
+    .contact p {
+        font-size: 1.1em
+    }
+
     /* Socials--------------- */
     .freesignals {
         display: block;
@@ -1409,6 +1519,7 @@ and (max-width: 1024px){
     .textwrapper p {
         padding-left: 12.5%;
     }
+
     .signalstext p {
         font-size: 1.1em
     }
