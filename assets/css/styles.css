@@ -48,7 +48,8 @@ a {
     display: inline-block;
     padding-top: 2.5%;
     background-color: #F7F7F7;
-    margin-bottom: -4px;
+    padding-top: 50px;
+    margin-bottom: -4px
 }
 
 nav {
@@ -272,7 +273,6 @@ nav {
     display: flex;
 }
 
-
 .accountmanageimage {
     height: 200px;
     width: 200px;
@@ -341,19 +341,6 @@ nav {
     padding-bottom: 50px;
 }
 
-.analysisimage1 {
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    margin-left: 20%;
-}
-
-.analysisimage2 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-}
-
 .tech_analysis {
     width: 65%;
     padding-left: 35%
@@ -383,7 +370,7 @@ nav {
   padding-left: 22.5%;
   padding-right: 22.5%;
   padding-top: 60px;
-  padding-bottom: 70px;
+  padding-bottom: 45px;
   background-color: #F7F7F7;
 }
 
@@ -395,10 +382,6 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px 30px;
-}
-
-.contact form p {
-  margin: 0;
 }
 
 .contact form button,
@@ -455,6 +438,15 @@ nav {
 	background-size: 30px 30px;
 	background-position: 95%;
 	background-repeat: no-repeat;
+}
+
+.contact p {    
+    text-align: center;
+    font-size: 1.5em
+}
+
+.contact span {
+    font-weight: 600
 }
 /* End Of Contact Section---------------------------------- */
 
@@ -514,6 +506,15 @@ nav {
     border-radius: 40%;
 }
 /* End Of Socials Section---------------------------------- */
+
+/* Back To Top---------------------------------- */
+.top p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: underline
+}
+/* End Of Section---------------------------------- */
 
 /* Footer---------------------------------- */
 footer {
@@ -934,16 +935,32 @@ and (max-width: 480px){
         padding-bottom: 6%;
     }
 
-    .contact form {
+    /*.contact form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px 10px;
-    }
+    }*/
+
+    .contact form {
+        display: block
+}
 
     #name,
     #phone,
     #email {
-        width: 82%
+        width: 90%;
+    }
+
+    .contact form button {
+    width: 98%;
+    }
+
+    .contact form input{
+        margin-bottom: 10px
+    }
+
+    .contact p{
+        font-size: 16px
     }
 
     .callback-info h2 {

@@ -1,4 +1,4 @@
-Together Trading
+# Together Trading
 
 I based my project on services related to making another stream of Income through the foreign exchange market (Forex).
 
@@ -11,7 +11,7 @@ As-well-as full time work, I run my own online business with a team of partners 
 profit as I do. Not only that, but for those who dont have the time to trade or dont want to go through the hassle of registering with a broker, I also provide
 a management scheme where we do all the work and split the profits. Win, win for everyone.
 
-UX
+## User Experience (UX)
 In effect, this website Is for people looking for other ways to make money without physically having to do anything. This reaches a wide audience, anybody above 18
 can be involved, and Is something that resonates with everyone. Afterall, who doesn't want to make more money?
 As a client you can be as much or as little involved as you like. You can follow our analysis and data groups (which are free) and learn to trade yourself or we can
@@ -34,7 +34,7 @@ Our managed accounts:
 
 As you can see theres quite a difference.
 
-Features
+## Features
 
 Hero section: This Is the what you see straight away on the site. Enticing, big, bold text that lures the reader into finding out more. Also contains an image to further
 describe the products and included two buttons, "find out more" and "contact" that can be used to Instantly direct the reader to that specific part on the page.
@@ -65,12 +65,14 @@ the fine prints. Theres also a copyright watermark with Includes my own added "s
 
 Hopefully when I become more experienced I would like to revisit this website and implement a collapsable navigation bar amongst other features.
 
-Deployment
+## Deployment
 
 Throughout this project Ive been making necessary 'commits' with messages to ensure my work Is backed up and to show the progression from start to finish.
 I will be using GitHub to deploy the website. 
 
-Credits
+## Credits
 
 All Images from the forex groups were taken by myself but the Icons were taken from google Images and edited to suit. These were then Imported Into GitPod
 and can be found (assets/images/..). 
+
+Contact section based off and inspired by [REX KIRBY](http://www.rexkirby.com/)
