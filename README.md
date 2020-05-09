@@ -2,22 +2,22 @@
 
 I based my project on services related to making another stream of Income through the foreign exchange market (Forex).
 
-In this website I'm trying to promote these services and showcase all the benefits that come with It. Did you know that 1 in 4 adults suffer from financial problems
-and In recent studies the financial conduct authority say a further 50% of those "display one or more characteristics that signal their potential vulnerability".
-The major worry with financial struggles Is the levels of stress and frustration It causes. Having seen this first hand I decided to set up Together Trading as
-a way to help people make money and bring a community of together.
-
 As-well-as full time work, I run my own online business with a team of partners giving tips and sharing the trades I will be taking for my clients to copy and 
 profit as I do. Not only that, but for those who dont have the time to trade or dont want to go through the hassle of registering with a broker, I also provide
 a management scheme where we do all the work and split the profits. Win, win for everyone.
+
+In this website I'm trying to promote these services and showcase all the benefits that come with It. Did you know that 1 in 4 adults suffer from financial problems
+and In recent studies the financial conduct authority say a further 50% of those "display one or more characteristics that signal their potential vulnerability".
+The major worry with financial struggles Is the levels of stress and frustration It causes. Having seen this first hand I decided to set up Together Trading as
+a way to help people make extra money and bring a community together.
 
 ## User Experience (UX)
 In effect, this website Is for people looking for other ways to make money without physically having to do anything. This reaches a wide audience, anybody above 18
 can be involved, and Is something that resonates with everyone. Afterall, who doesn't want to make more money?
 As a client you can be as much or as little involved as you like. You can follow our analysis and data groups (which are free) and learn to trade yourself or we can
-take out all the work and do It for you for a fee. A fee that will only be applied providing we meet all the profit requirements.  
+take out all the work and do It for you for a small fee. A fee that will only be applied providing we meet all the profit requirements.  
 
-Our account management scheme Is extremely retutable. We like to think of It as a glorified savings account.
+Our account management scheme Is extremely reputable. We like to think of It as a glorified savings account.
 For example, your average savings account with a bank Is around 3% per year. We offer 10% per month!
 As a customer, knowing the numbers are great but does anyone acually take the time to work them out..
 So lets do run some numbers:
@@ -36,8 +36,8 @@ As you can see theres quite a difference.
 
 ## Features
 
-Hero section: This Is the what you see straight away on the site. Enticing, big, bold text that lures the reader into finding out more. Also contains an image to further
-describe the products and included two buttons, "find out more" and "contact" that can be used to Instantly direct the reader to that specific part on the page.
+Hero section: This Is the what you see straight away on the site. Enticing, big, bold text that lures the reader Into finding out more. Also contains an Image to further
+describe the products and Included two buttons, "find out more" and "contact" that can be used to Instantly direct the reader to that specific part on the page.
 
 Services section: In this section we get a brief overview of what services we provide. Bullet points of the most Important advantages of each service, plus an Image to
 help break up the section. I didn't want to add too much text so close to the top of the page because the reader might lose interest, so I just highlight the main points.
@@ -76,3 +76,7 @@ All Images from the forex groups were taken by myself but the Icons were taken f
 and can be found (assets/images/..). 
 
 Contact section based off and inspired by [REX KIRBY](http://www.rexkirby.com/)
+
+Except for the contact section, all the code is done purely by myself. I could have used a framework such as Bootsrap however, I thought it would be better 
+as a beginner to do everything myself and not have to rely on the framework. This Involved more research but I feel like I've learned so much more this way
+then I would have just following the bootstrap templates.  
