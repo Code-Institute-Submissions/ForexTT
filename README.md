@@ -1,5 +1,7 @@
 # Together Trading
 
+Check out the finished [PRODUCT](https://joenapper.github.io/ForexTT/)
+
 I based my project on services related to making another stream of Income through the foreign exchange market (Forex).
 
 As-well-as full time work, I run my own online business with a team of partners giving tips and sharing the trades I will be taking for my clients to copy and 
